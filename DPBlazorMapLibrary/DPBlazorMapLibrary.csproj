@@ -13,7 +13,7 @@
 </Description>
     <PackageProjectUrl>https://github.com/DP-projects/DPBlazorMap</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>1.0.3-alpha</Version>
+    <Version>1.0.4-alpha</Version>
   </PropertyGroup>
 
 
