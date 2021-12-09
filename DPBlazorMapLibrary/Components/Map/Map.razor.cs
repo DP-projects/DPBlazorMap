@@ -19,7 +19,11 @@ namespace DPBlazorMapLibrary
         internal MapEvented MapEvented { get; set; }
 
         [Parameter]
-        public string DivId { get; set; }
+        public string DivId { get; set; } = "myMap";
+
+        [Parameter]
+        public string CssClass { get; set; } = "map";
+
 
         [Parameter]
         public MapOptions MapOptions { get; set; }

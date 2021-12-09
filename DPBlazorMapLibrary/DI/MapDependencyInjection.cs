@@ -3,7 +3,7 @@ using DPBlazorMapLibrary.JsInterops.LeftletDefaultIconFactories;
 using DPBlazorMapLibrary.JsInterops.Maps;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace DPBlazorMapLibrary.DI
+namespace DPBlazorMapLibrary
 {
     public static class MapDependencyInjection
     {
