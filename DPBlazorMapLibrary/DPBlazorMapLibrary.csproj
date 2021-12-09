@@ -8,6 +8,12 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageTags>blazor;map;leflet;</PackageTags>
     <RepositoryUrl>https://github.com/DP-projects/DPBlazorMap</RepositoryUrl>
+    <Authors>polagaev.denis;</Authors>
+    <Description>DP Blaser Map is a library for Blazer, which is a wrapper on top of the Leaflet js library.
+</Description>
+    <PackageProjectUrl>https://github.com/DP-projects/DPBlazorMap</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 
@@ -17,6 +23,16 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\Layers\OtherLayers\GeoJSON\" />
+    <Folder Include="Models\Layers\OtherLayers\FeatureGroup\" />
+    <Folder Include="Models\Layers\OtherLayers\LayerGroup\" />
+    <Folder Include="Models\Layers\RasterLayers\TileLayersWms\" />
+    <Folder Include="Models\Layers\VectorLayers\SVGs\" />
+    <Folder Include="Models\Layers\VectorLayers\SVGOverlays\" />
+    <Folder Include="Models\Layers\VectorLayers\Canvases\" />
   </ItemGroup>
 
 </Project>

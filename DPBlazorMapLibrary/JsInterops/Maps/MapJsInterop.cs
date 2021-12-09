@@ -14,10 +14,10 @@ namespace DPBlazorMapLibrary.JsInterops.Maps
 
         }
 
-        public async ValueTask<IJSObjectReference> Initialize(MapOptions mapOptions)
+        public async ValueTask<IJSObjectReference> Initialize(string id, MapOptions mapOptions)
         {
             IJSObjectReference module = await moduleTask.Value;
-            return await module.InvokeAsync<IJSObjectReference>(_initializeJsFunction, mapOptions);
+            return await module.InvokeAsync<IJSObjectReference>(_initializeJsFunction, id, mapOptions);
         }
     }
 }

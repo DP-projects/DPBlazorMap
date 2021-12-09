@@ -1,6 +1,6 @@
 ﻿namespace DPBlazorMapLibrary
 {
-    internal class PathOptions : IneractiveLayerOptions
+    internal class PathOptions : InteractiveLayerOptions
     {
         public PathOptions()
         {

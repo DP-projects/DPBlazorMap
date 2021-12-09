@@ -5,6 +5,6 @@ namespace DPBlazorMapLibrary.JsInterops.Maps
 {
     internal interface IMapJsInterop : IBaseJsInterop
     {
-        ValueTask<IJSObjectReference> Initialize(MapOptions mapOptions);
+        ValueTask<IJSObjectReference> Initialize(string id, MapOptions mapOptions);
     }
 }
