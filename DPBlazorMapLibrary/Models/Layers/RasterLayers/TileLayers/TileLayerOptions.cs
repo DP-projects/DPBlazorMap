@@ -1,6 +1,6 @@
 ﻿namespace DPBlazorMapLibrary
 {
-    internal class TileLayerOptions : GridLayerOptions
+    public class TileLayerOptions : GridLayerOptions
     {
         /// <summary>
         /// The minimum zoom level down to which this layer will be displayed (inclusive).

@@ -6,7 +6,7 @@ namespace DPBlazorMapLibrary
     /// <summary>
     /// A circle of a fixed size with radius specified in pixels. Extends Path.
     /// </summary>
-    internal class CircleMarker : Path
+    public class CircleMarker : Path
     {
         private const string _toGeoJSONJsFunction = "toGeoJSON";
         private const string _setLatLngJsFunction = "setLatLng";
@@ -14,7 +14,7 @@ namespace DPBlazorMapLibrary
         private const string _setRadiusJsFunction = "setRadius";
         private const string _getRadiusJsFunction = "getRadius";
 
-        internal CircleMarker(IJSObjectReference jsReference, IEventedJsInterop eventedJsInterop)
+        public CircleMarker(IJSObjectReference jsReference, IEventedJsInterop eventedJsInterop)
         {
             JsReference = jsReference;
             EventedJsInterop = eventedJsInterop;

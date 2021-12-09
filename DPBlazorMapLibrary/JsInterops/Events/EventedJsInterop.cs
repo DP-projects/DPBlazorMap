@@ -3,7 +3,7 @@ using Microsoft.JSInterop;
 
 namespace DPBlazorMapLibrary.JsInterops.Events
 {
-    internal class EventedJsInterop : BaseJsInterop, IEventedJsInterop
+    public class EventedJsInterop : BaseJsInterop, IEventedJsInterop
     {
         private static readonly string _jsFilePath = $"{JsInteropConfig.BaseJsFolder}{JsInteropConfig.EventedFile}";
         private const string _onCallbackJsFanction = "onCallback";

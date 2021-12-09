@@ -2,9 +2,9 @@
 
 namespace DPBlazorMapLibrary
 {
-    internal class Icon : JsReferenceBase
+    public class Icon : JsReferenceBase
     {
-        internal Icon(IJSObjectReference jsReference)
+        public Icon(IJSObjectReference jsReference)
         {
             JsReference = jsReference;
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DPBlazorMapLibrary
 {
-    internal class CircleOptions : CircleMarkerOptions
+    public class CircleOptions : CircleMarkerOptions
     {
 
     }

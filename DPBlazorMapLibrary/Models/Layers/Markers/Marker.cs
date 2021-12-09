@@ -3,7 +3,7 @@ using Microsoft.JSInterop;
 
 namespace DPBlazorMapLibrary
 {
-    internal class Marker : InteractiveLayer
+    public class Marker : InteractiveLayer
     {
         private const string GetLatLngJsFunction = "getLatLng";
         private const string SetLatLngJsFunction = "setLatLng";
@@ -12,7 +12,7 @@ namespace DPBlazorMapLibrary
         private const string SetIconJsFunction = "setIcon";
         private const string SetOpacityJsFunction = "setOpacity";
 
-        internal Marker(IJSObjectReference jsReference, IEventedJsInterop eventedJsInterop)
+        public Marker(IJSObjectReference jsReference, IEventedJsInterop eventedJsInterop)
         {
             JsReference = jsReference;
             EventedJsInterop = eventedJsInterop;

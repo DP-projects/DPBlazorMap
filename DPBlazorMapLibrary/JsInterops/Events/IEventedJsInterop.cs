@@ -2,7 +2,7 @@
 
 namespace DPBlazorMapLibrary.JsInterops.Events
 {
-    internal interface IEventedJsInterop
+    public interface IEventedJsInterop
     {
         ValueTask OnCallback(DotNetObjectReference<Evented> eventedClass, IJSObjectReference eventedReference, string eventType);
     }

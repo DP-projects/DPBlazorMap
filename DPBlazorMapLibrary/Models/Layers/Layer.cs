@@ -6,7 +6,7 @@ namespace DPBlazorMapLibrary
     /// A set of methods from the Layer base class that all Leaflet layers use.
     /// Inherits all methods, options and events from L.Evented.
     /// </summary>
-    internal abstract class Layer : Evented
+    public abstract class Layer : Evented
     {
         private const string _addToJsFunction = "addTo";
         private const string _removeJsFunction = "remove";

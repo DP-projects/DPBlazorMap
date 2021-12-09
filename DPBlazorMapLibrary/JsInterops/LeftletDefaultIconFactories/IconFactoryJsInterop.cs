@@ -3,7 +3,7 @@ using Microsoft.JSInterop;
 
 namespace DPBlazorMapLibrary.JsInterops.LeftletDefaultIconFactories
 {
-    internal class IconFactoryJsInterop : BaseJsInterop, IIconFactoryJsInterop
+    public class IconFactoryJsInterop : BaseJsInterop, IIconFactoryJsInterop
     {
         private static readonly string _jsFilePath = $"{JsInteropConfig.BaseJsFolder}{JsInteropConfig.IconFactoryFile}";
         private const string _createDefaultIconJsFunction = "createDefaultIcon";

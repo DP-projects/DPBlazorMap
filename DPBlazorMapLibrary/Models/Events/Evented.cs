@@ -3,7 +3,7 @@ using Microsoft.JSInterop;
 
 namespace DPBlazorMapLibrary
 {
-    internal class Evented : JsReferenceBase
+    public class Evented : JsReferenceBase
     {
         #region Js functions name
         private const string _clickJsFunction = "click";

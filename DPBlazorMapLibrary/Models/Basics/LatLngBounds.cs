@@ -1,6 +1,6 @@
 ﻿namespace DPBlazorMapLibrary
 {
-    internal class LatLngBounds
+    public class LatLngBounds
     {
         public LatLngBounds()
         {

@@ -2,7 +2,7 @@
 
 namespace DPBlazorMapLibrary
 {
-    internal class GridLayerOptions
+    public class GridLayerOptions
     {
         /// <summary>
         /// Width and height of tiles in the grid. Use a number if width and height are equal, or L.point(width, height) otherwise.

@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace DPBlazorMapLibrary
 {
-    internal class MarkerOptions : InteractiveLayerOptions
+    public class MarkerOptions : InteractiveLayerOptions
     {
         public MarkerOptions()
         {

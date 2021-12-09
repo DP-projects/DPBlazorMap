@@ -4,7 +4,7 @@
     /// Some Layers can be made interactive - when the user interacts with such a layer, mouse events like click and mouseover can be handled.
     /// Use the event handling methods to handle these events.
     /// </summary>
-    internal abstract class InteractiveLayer : Layer
+    public abstract class InteractiveLayer : Layer
     {
         
     }

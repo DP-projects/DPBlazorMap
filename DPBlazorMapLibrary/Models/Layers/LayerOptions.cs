@@ -1,6 +1,6 @@
 ﻿namespace DPBlazorMapLibrary
 {
-    internal class LayerOptions
+    public class LayerOptions
     {
         /// <summary>
         /// By default the layer will be added to the map's overlay pane.

@@ -1,6 +1,6 @@
 ﻿namespace DPBlazorMapLibrary
 {
-    internal class Point
+    public class Point
     {
         public Point(int x, int y)
         {

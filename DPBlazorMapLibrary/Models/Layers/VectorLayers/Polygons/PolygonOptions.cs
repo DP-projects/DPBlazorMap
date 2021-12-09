@@ -1,6 +1,6 @@
 ﻿namespace DPBlazorMapLibrary
 {
-    internal class PolygonOptions : PolylineOptions
+    public class PolygonOptions : PolylineOptions
     {
 
     }

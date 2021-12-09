@@ -6,9 +6,9 @@ namespace DPBlazorMapLibrary
     /// <summary>
     /// A class for drawing rectangle overlays on a map. Extends Polygon.
     /// </summary>
-    internal class Rectangle : Polygon
+    public class Rectangle : Polygon
     {
-        internal Rectangle(IJSObjectReference jsReference, IEventedJsInterop eventedJsInterop)
+        public Rectangle(IJSObjectReference jsReference, IEventedJsInterop eventedJsInterop)
             : base(jsReference, eventedJsInterop)
         {
         }

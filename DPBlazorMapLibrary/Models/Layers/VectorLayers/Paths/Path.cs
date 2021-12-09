@@ -5,7 +5,7 @@ namespace DPBlazorMapLibrary
     /// <summary>
     /// An abstract class that contains options and constants shared between vector overlays (Polygon, Polyline, Circle). Do not use it directly.
     /// </summary>
-    internal abstract class Path : InteractiveLayer
+    public abstract class Path : InteractiveLayer
     {
         private const string _redrawJsFunction = "redraw";
         private const string _setStyleJsFunction = "setStyle";

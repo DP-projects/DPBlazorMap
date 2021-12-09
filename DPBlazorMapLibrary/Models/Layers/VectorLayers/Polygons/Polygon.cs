@@ -8,9 +8,9 @@ namespace DPBlazorMapLibrary
     /// 
     /// Note that points you pass when creating a polygon shouldn't have an additional last point equal to the first one — it's better to filter out such points.
     /// </summary>
-    internal class Polygon : Polyline
+    public class Polygon : Polyline
     {
-        internal Polygon(IJSObjectReference jsReference, IEventedJsInterop eventedJsInterop)
+        public Polygon(IJSObjectReference jsReference, IEventedJsInterop eventedJsInterop)
             : base(jsReference, eventedJsInterop)
         {
         }

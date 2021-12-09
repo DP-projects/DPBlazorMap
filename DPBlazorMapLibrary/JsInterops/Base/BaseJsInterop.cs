@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DPBlazorMapLibrary.JsInterops.Base
 {
-    internal class BaseJsInterop : IAsyncDisposable, IBaseJsInterop
+    public class BaseJsInterop : IAsyncDisposable, IBaseJsInterop
     {
         protected readonly Lazy<Task<IJSObjectReference>> moduleTask;
 

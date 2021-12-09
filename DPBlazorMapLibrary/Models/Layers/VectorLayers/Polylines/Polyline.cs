@@ -6,7 +6,7 @@ namespace DPBlazorMapLibrary
     /// <summary>
     /// A class for drawing polyline overlays on a map. Extends Path.
     /// </summary>
-    internal class Polyline : Path
+    public class Polyline : Path
     {
         private const string _toGeoJSONJsFunction = "toGeoJSON";
         private const string _getLatLngsJsFunction = "getLatLngs";
@@ -15,7 +15,7 @@ namespace DPBlazorMapLibrary
         private const string _getCenterJsFunction = "getCenter";
         private const string _addLatLngJsFunction = "addLatLng";
 
-        internal Polyline(IJSObjectReference jsReference, IEventedJsInterop eventedJsInterop)
+        public Polyline(IJSObjectReference jsReference, IEventedJsInterop eventedJsInterop)
         {
             EventedJsInterop = eventedJsInterop;
             JsReference = jsReference;

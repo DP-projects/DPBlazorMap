@@ -1,6 +1,6 @@
 ﻿namespace DPBlazorMapLibrary
 {
-    internal class VideoOverlayOptions : ImageOverlayOptions
+    public class VideoOverlayOptions : ImageOverlayOptions
     {
         /// <summary>
         /// Whether the video starts playing automatically when loaded.

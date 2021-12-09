@@ -3,7 +3,7 @@ using Microsoft.JSInterop;
 
 namespace DPBlazorMapLibrary
 {
-    internal class MapEvented : Evented
+    public class MapEvented : Evented
     {
         public MapEvented(IJSObjectReference jsReference, IEventedJsInterop eventedJsInterop)
         {

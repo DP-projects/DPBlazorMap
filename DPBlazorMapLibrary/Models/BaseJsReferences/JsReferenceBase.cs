@@ -5,13 +5,13 @@ namespace DPBlazorMapLibrary
     /// <summary>
     /// Base class for a reference to a js object
     /// </summary>
-    internal class JsReferenceBase
+    public class JsReferenceBase
     {
         #pragma warning disable CS8618
         /// <summary>
         /// Js References
         /// </summary>
-        internal IJSObjectReference JsReference;
+        public IJSObjectReference JsReference;
         #pragma warning restore CS8618 
     }
 }

@@ -6,7 +6,7 @@ namespace DPBlazorMapLibrary
     /// <summary>
     /// Used to load and display a single image over specific bounds of the map. Extends Layer.
     /// </summary>
-    internal class ImageOverlay : InteractiveLayer
+    public class ImageOverlay : InteractiveLayer
     {
         private const string _setOpacityJsFunction = "setOpacity";
         private const string _bringToFrontJsFunction = "bringToFront";
@@ -19,7 +19,7 @@ namespace DPBlazorMapLibrary
 
         //TODO: Add events load, error
 
-        internal ImageOverlay(IJSObjectReference jsReference, IEventedJsInterop eventedJsInterop)
+        public ImageOverlay(IJSObjectReference jsReference, IEventedJsInterop eventedJsInterop)
         {
             JsReference = jsReference;
             EventedJsInterop = eventedJsInterop;

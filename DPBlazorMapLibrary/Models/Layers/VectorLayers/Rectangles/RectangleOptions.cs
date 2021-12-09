@@ -1,6 +1,6 @@
 ﻿namespace DPBlazorMapLibrary
 {
-    internal class RectangleOptions : PolylineOptions
+    public class RectangleOptions : PolylineOptions
     {
 
     }

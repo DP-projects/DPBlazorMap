@@ -8,7 +8,7 @@ namespace DPBlazorMapLibrary
     /// GridLayer can be extended to create a tiled grid of HTML elements like <canvas>, <img> or <div>.
     /// GridLayer will handle creating and animating these DOM elements for you.
     /// </summary>
-    internal abstract class GridLayer : Layer
+    public abstract class GridLayer : Layer
     {
        
     }

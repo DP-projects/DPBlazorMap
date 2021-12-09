@@ -1,6 +1,6 @@
 ﻿namespace DPBlazorMapLibrary
 {
-    internal class InteractiveLayerOptions : LayerOptions
+    public class InteractiveLayerOptions : LayerOptions
     {
         /// <summary>
         /// If false, the layer will not emit mouse events and will act as a part of the underlying map.

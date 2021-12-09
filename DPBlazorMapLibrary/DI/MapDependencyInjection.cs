@@ -10,13 +10,19 @@ namespace DPBlazorMapLibrary
         public static IServiceCollection AddMapService(this IServiceCollection services)
         {
             AddJsInterops(services);
+            AddFactorys(services);
             return services;
         }
+        
         private static void AddJsInterops(IServiceCollection services)
         {
             services.AddTransient<IMapJsInterop, MapJsInterop>();
             services.AddTransient<IEventedJsInterop, EventedJsInterop>();
             services.AddTransient<IIconFactoryJsInterop, IconFactoryJsInterop>();
+        }
+        private static void AddFactorys(IServiceCollection services)
+        {
+            services.AddTransient<IMarkerFactory, MarkerFactory>();
         }
     }
 }

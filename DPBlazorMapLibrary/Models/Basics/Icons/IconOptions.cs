@@ -1,6 +1,6 @@
 ﻿namespace DPBlazorMapLibrary
 {
-    internal class IconOptions
+    public class IconOptions
     {
         /// <summary>
         /// (required) The URL to the icon image (absolute or relative to your script path).

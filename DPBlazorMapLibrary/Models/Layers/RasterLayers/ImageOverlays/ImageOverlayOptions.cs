@@ -1,6 +1,6 @@
 ﻿namespace DPBlazorMapLibrary
 {
-    internal class ImageOverlayOptions : InteractiveLayerOptions
+    public class ImageOverlayOptions : InteractiveLayerOptions
     {
         public ImageOverlayOptions()
         {

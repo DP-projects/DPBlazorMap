@@ -2,7 +2,7 @@
 
 namespace DPBlazorMapLibrary.JsInterops.LeftletDefaultIconFactories
 {
-    internal interface IIconFactoryJsInterop
+    public interface IIconFactoryJsInterop
     {
         ValueTask<IJSObjectReference> CreateDefaultIcon();
     }

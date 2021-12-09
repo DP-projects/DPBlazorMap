@@ -3,7 +3,7 @@ using Microsoft.JSInterop;
 
 namespace DPBlazorMapLibrary.JsInterops.Maps
 {
-    internal class MapJsInterop : BaseJsInterop, IMapJsInterop
+    public class MapJsInterop : BaseJsInterop, IMapJsInterop
     {
         private static readonly string _jsFilePath = $"{JsInteropConfig.BaseJsFolder}{JsInteropConfig.MapFile}";
         private const string _initializeJsFunction = "initialize";

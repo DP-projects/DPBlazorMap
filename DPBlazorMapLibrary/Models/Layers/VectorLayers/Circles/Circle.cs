@@ -6,9 +6,9 @@ namespace DPBlazorMapLibrary
     /// <summary>
     /// A class for drawing circle overlays on a map. Extends CircleMarker.
     /// </summary>
-    internal class Circle : CircleMarker
+    public class Circle : CircleMarker
     {
-        internal Circle(IJSObjectReference jsReference, IEventedJsInterop eventedJsInterop)
+        public Circle(IJSObjectReference jsReference, IEventedJsInterop eventedJsInterop)
             : base(jsReference, eventedJsInterop)
         {
         }

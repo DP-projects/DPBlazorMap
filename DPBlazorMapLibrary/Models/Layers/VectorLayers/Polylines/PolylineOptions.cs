@@ -1,6 +1,6 @@
 ﻿namespace DPBlazorMapLibrary
 {
-    internal class PolylineOptions : PathOptions
+    public class PolylineOptions : PathOptions
     {
         /// <summary>
         /// How much to simplify the polyline on each zoom level.
