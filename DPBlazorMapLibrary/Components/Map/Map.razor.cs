@@ -78,9 +78,15 @@ namespace DPBlazorMapLibrary
             return await this.MapReference.InvokeAsync<int>(getMaxZoom);
         }
 
-        public async Task SetView(LatLng latLng)
+        /// <summary>
+        /// Sets the view of the map (geographical center and zoom) with the given animation options.
+        /// </summary>
+        /// <param name="latLng"></param>
+        /// <param name="zoom"></param>
+        /// <returns></returns>
+        public async Task SetView(LatLng latLng, int zoom)
         {
-            await this.MapReference.InvokeAsync<IJSObjectReference>(setView, latLng);
+            await this.MapReference.InvokeAsync<IJSObjectReference>(setView, latLng, zoom);
         }
 
         public async Task SetZoom(int zoom)

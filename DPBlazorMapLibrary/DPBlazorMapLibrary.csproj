@@ -13,7 +13,7 @@
 </Description>
     <PackageProjectUrl>https://github.com/DP-projects/DPBlazorMap</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>1.0.4-alpha</Version>
+    <Version>1.0.7-alpha</Version>
   </PropertyGroup>
 
 
@@ -26,6 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Factorys\Interfaces\" />
     <Folder Include="Models\Layers\OtherLayers\GeoJSON\" />
     <Folder Include="Models\Layers\OtherLayers\FeatureGroup\" />
     <Folder Include="Models\Layers\OtherLayers\LayerGroup\" />
