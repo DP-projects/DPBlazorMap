@@ -22,8 +22,8 @@ namespace DPBlazorMapLibrary
         }
         private static void AddFactorys(IServiceCollection services)
         {
-            services.AddTransient<IMarkerFactory, MarkerFactory>();
-            services.AddTransient<ITileLayerFactory, TileLayerFactory>();
+            services.AddTransient<LayerFactory>();
+            services.AddTransient<IIconFactory, IconFactory>();
         }
     }
 }

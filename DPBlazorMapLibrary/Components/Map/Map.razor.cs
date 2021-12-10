@@ -19,10 +19,10 @@ namespace DPBlazorMapLibrary
         public MapEvented MapEvented { get; set; }
 
         [Parameter]
-        public string DivId { get; set; } = "myMap";
+        public string DivId { get; set; } = "mapId";
 
         [Parameter]
-        public string CssClass { get; set; } = "map";
+        public string CssClass { get; set; } = "mapClass";
 
 
         [Parameter]
@@ -134,7 +134,7 @@ namespace DPBlazorMapLibrary
         /// <returns></returns>
         public async Task FlyToBounds(LatLngBounds latLngBounds)
         {
-            await this.MapReference.InvokeAsync<IJSObjectReference>(flyToBounds, latLngBounds);
+            await this.MapReference.InvokeAsync<IJSObjectReference>(flyToBounds, latLngBounds.ToLatLng());
         }
 
         /// <summary>
@@ -144,7 +144,7 @@ namespace DPBlazorMapLibrary
         /// <param name="latLngBounds">область</param>
         public async Task FitBounds(LatLngBounds latLngBounds)
         {
-            await this.MapReference.InvokeAsync<IJSObjectReference>(fitBounds, latLngBounds);
+            await this.MapReference.InvokeAsync<IJSObjectReference>(fitBounds, latLngBounds.ToLatLng());
         }
 
         /// <summary>

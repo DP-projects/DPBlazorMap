@@ -2,6 +2,7 @@
 {
     public class LayerOptions
     {
+        public int Id { get; set; }
         /// <summary>
         /// By default the layer will be added to the map's overlay pane.
         /// Overriding this option will cause the layer to be placed on another pane by default.

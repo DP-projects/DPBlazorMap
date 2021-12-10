@@ -7,12 +7,12 @@ namespace DPBlazorMapLibrary
         public GridLayerOptions()
         {
             Pane = "tilePane";
-
         }
+
         /// <summary>
         /// Width and height of tiles in the grid. Use a number if width and height are equal, or L.point(width, height) otherwise.
         /// </summary>
-        public Size TileSize { get; set; } = new Size(256, 256);
+        public int TileSize { get; set; } = 256;
 
         /// <summary>
         /// Opacity of the tiles. Can be used in the createTile() function.
@@ -20,8 +20,7 @@ namespace DPBlazorMapLibrary
         public double Opacity { get; set; } = 1.0;
 
         /// <summary>
-        /// By default, a smooth zoom animation (during a touch zoom or a flyTo()) will update grid layers every integer zoom level. 
-        /// Setting this option to false will update the grid layer only when the smooth animation ends.
+        /// By default, a smooth zoom animation will update grid layers every integer zoom level. Setting this option to false will update the grid layer only when the smooth animation ends.
         /// </summary>
         public bool UpdateWhenZooming { get; set; } = true;
 
@@ -30,22 +29,12 @@ namespace DPBlazorMapLibrary
         /// </summary>
         public int UpdateInterval { get; set; } = 200;
 
-        /// <summary>
-        /// The explicit zIndex of the tile layer.
-        /// </summary>
         public int ZIndex { get; set; } = 1;
 
         /// <summary>
         /// If set, tiles will only be loaded inside the set.
         /// </summary>
-        public LatLngBounds Bounds { get; set; }
-
-        public int MinZoom { get; set; } = 0;
-        public int? MaxZoom { get; set; } = null;
-        public int? MaxNativeZoom { get; set; } = null;
-        public int? MinNativeZoom { get; set; } = null;
-        public bool NoWrap { get; set; } = false;
-        public int KeepBuffer { get; set; } = 2;
+        public Tuple<LatLng, LatLng> Bounds { get; set; }
 
     }
 }
