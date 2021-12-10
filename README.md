@@ -6,6 +6,10 @@ DP Blazor Map is a library for Blazor, which is a wrapper on top of the Leaflet 
 
 The project is being created and developed in order to become the basis for creating a geoportal on Blazer.
 
+### Template
+
+https://github.com/DP-projects/DPBlazorMapExample
+
 ## Table of contents
 
 - [Start](start)
