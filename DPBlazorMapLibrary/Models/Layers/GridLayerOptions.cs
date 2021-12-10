@@ -2,8 +2,13 @@
 
 namespace DPBlazorMapLibrary
 {
-    public class GridLayerOptions
+    public class GridLayerOptions : LayerOptions
     {
+        public GridLayerOptions()
+        {
+            Pane = "tilePane";
+
+        }
         /// <summary>
         /// Width and height of tiles in the grid. Use a number if width and height are equal, or L.point(width, height) otherwise.
         /// </summary>
@@ -34,5 +39,13 @@ namespace DPBlazorMapLibrary
         /// If set, tiles will only be loaded inside the set.
         /// </summary>
         public LatLngBounds Bounds { get; set; }
+
+        public int MinZoom { get; set; } = 0;
+        public int? MaxZoom { get; set; } = null;
+        public int? MaxNativeZoom { get; set; } = null;
+        public int? MinNativeZoom { get; set; } = null;
+        public bool NoWrap { get; set; } = false;
+        public int KeepBuffer { get; set; } = 2;
+
     }
 }

@@ -2,15 +2,11 @@
 {
     public class TileLayerOptions : GridLayerOptions
     {
-        /// <summary>
-        /// The minimum zoom level down to which this layer will be displayed (inclusive).
-        /// </summary>
-        public int MinZoom { get; set; } = 0;
-
-        /// <summary>
-        /// The maximum zoom level up to which this layer will be displayed (inclusive).
-        /// </summary>
-        public int MaxZoom { get; set; } = 18;
+        public TileLayerOptions()
+        {
+            MinZoom = 0;
+            MaxZoom = 18;
+        }
 
         /// <summary>
         /// Subdomains of the tile service. Can be passed in the form of one string (where each letter is a subdomain name) or an array of strings.
