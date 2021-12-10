@@ -10,6 +10,7 @@ The project is being created and developed in order to become the basis for crea
 
 - [Start](start)
 - [Usage](usage)
+- [Todo](todo)
 
 ## Start
 
@@ -155,3 +156,87 @@ private Map _map;
         await _map.FlyToBounds(imageBounds);
     }
 ```
+
+## TODO
+
+1. https://leafletjs.com/examples/layers-control/
+2. https://leafletjs.com/examples/choropleth/
+3. https://leafletjs.com/reference.html#featuregroup
+4. https://leafletjs.com/reference.html#geojson
+
+
+TODO: add RemoveFrom(<LayerGroup> group)
+    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Layers\Layer.cs
+    62
+
+TODO: add Extension methods: onAdd, onRemove, getEvents, getAttribution, getAttribution
+    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Layers\Layer.cs
+    64
+
+TODO:  add <Popup options> options?
+    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Layers\Layer.cs
+    74
+
+TODO: getPopup()
+    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Layers\Layer.cs
+    142
+
+TODO: <Tooltip options> options?
+    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Layers\Layer.cs
+    152
+
+TODO: getTooltip()	
+    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Layers\Layer.cs
+    220
+
+TODO: Add events load, error
+    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Layers\RasterLayers\ImageOverlays\ImageOverlay.cs
+    20
+
+TODO: getBounds()
+    DPBlazorMapLibrary  DPBlazorMap\DPBlazorMapLibrary\Models\Layers\RasterLayers\ImageOverlays\ImageOverlay.cs
+    86
+
+TODO: getElement()
+    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Layers\RasterLayers\ImageOverlays\ImageOverlay.cs
+    88
+
+TODO: add event Load
+    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Layers\RasterLayers\VideoOverlays\VideoOverlay.cs
+    11
+
+TODO: getElement()
+    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Layers\RasterLayers\VideoOverlays\VideoOverlay.cs
+    17
+
+TODO: closestLayerPoint(<Point> p)  
+    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Layers\VectorLayers\Polylines\Polyline.cs
+    62
+
+TODO: doubleClickZoom   
+    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Maps\MapOptions.cs
+    52
+
+TODO: add CRS	
+    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Maps\MapOptions.cs
+    63
+
+TODO: add Animation Options
+    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Maps\MapOptions.cs
+    82
+
+TODO: add Panning Inertia Options
+    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Maps\MapOptions.cs
+    83
+
+TODO: add Keyboard Navigation Options
+    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Maps\MapOptions.cs
+    84
+
+TODO: add Mouse wheel options	
+    DPBlazorMapLibrary  DPBlazorMap\DPBlazorMapLibrary\Models\Maps\MapOptions.cs
+    85
+
+TODO: add Touch interaction options
+    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Maps\MapOptions.cs
+    86
