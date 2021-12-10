@@ -19,7 +19,7 @@ https://github.com/DP-projects/DPBlazorMapExample
 ## Start
 
 1. Add NuGet package to your project.
-2. Add latest Leflet required [Leflet download](https://leafletjs.com/download.html).
+2. Add latest Leflet required [Leaflet download](https://leafletjs.com/download.html).
 
 ```
 	<head>
