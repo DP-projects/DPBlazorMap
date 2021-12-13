@@ -4,6 +4,10 @@ DP Blazor Map is a library for Blazor, which is a wrapper on top of the Leaflet 
 
 [![NuGet version (DPBlazorMapLibrary)](https://img.shields.io/nuget/v/DPBlazorMapLibrary)](https://www.nuget.org/packages/DPBlazorMapLibrary/)
 
+```dif
+- The next version will be released after the implementation of the GEOJSON layer
+```
+
 The project is being created and developed in order to become the basis for creating a geoportal on Blazer.
 
 ### Template
@@ -163,84 +167,16 @@ private Map _map;
 
 ## TODO
 
-1. https://leafletjs.com/examples/layers-control/
-2. https://leafletjs.com/examples/choropleth/
-3. https://leafletjs.com/reference.html#featuregroup
-4. https://leafletjs.com/reference.html#geojson
+[] Feature Group
+[x] Image overlay
+[x] Video overlay
+[x] Tile layer
+[] Layer group
+[] Geo json layer
+[] geo json models
 
-
-TODO: add RemoveFrom(<LayerGroup> group)
-    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Layers\Layer.cs
-    62
-
-TODO: add Extension methods: onAdd, onRemove, getEvents, getAttribution, getAttribution
-    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Layers\Layer.cs
-    64
-
-TODO:  add <Popup options> options?
-    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Layers\Layer.cs
-    74
-
-TODO: getPopup()
-    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Layers\Layer.cs
-    142
-
-TODO: <Tooltip options> options?
-    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Layers\Layer.cs
-    152
-
-TODO: getTooltip()	
-    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Layers\Layer.cs
-    220
-
-TODO: Add events load, error
-    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Layers\RasterLayers\ImageOverlays\ImageOverlay.cs
-    20
-
-TODO: getBounds()
-    DPBlazorMapLibrary  DPBlazorMap\DPBlazorMapLibrary\Models\Layers\RasterLayers\ImageOverlays\ImageOverlay.cs
-    86
-
-TODO: getElement()
-    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Layers\RasterLayers\ImageOverlays\ImageOverlay.cs
-    88
-
-TODO: add event Load
-    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Layers\RasterLayers\VideoOverlays\VideoOverlay.cs
-    11
-
-TODO: getElement()
-    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Layers\RasterLayers\VideoOverlays\VideoOverlay.cs
-    17
-
-TODO: closestLayerPoint(<Point> p)  
-    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Layers\VectorLayers\Polylines\Polyline.cs
-    62
-
-TODO: doubleClickZoom   
-    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Maps\MapOptions.cs
-    52
-
-TODO: add CRS	
-    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Maps\MapOptions.cs
-    63
-
-TODO: add Animation Options
-    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Maps\MapOptions.cs
-    82
-
-TODO: add Panning Inertia Options
-    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Maps\MapOptions.cs
-    83
-
-TODO: add Keyboard Navigation Options
-    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Maps\MapOptions.cs
-    84
-
-TODO: add Mouse wheel options	
-    DPBlazorMapLibrary  DPBlazorMap\DPBlazorMapLibrary\Models\Maps\MapOptions.cs
-    85
-
-TODO: add Touch interaction options
-    DPBlazorMapLibrary	DPBlazorMap\DPBlazorMapLibrary\Models\Maps\MapOptions.cs
-    86
+[] Add methods/events to Layer : RemoveFrom, onAdd, onRemove, getEvents, getAttribution, <Popup options> options, <Tooltip options> options, getPopup, getTooltip, 
+[] add methods/events to ImageOverlay : event load, event error, getBounds, getElement, 
+[] add methods/events to VideoOverlay:  event load, event error, getElement, 
+[] add methods/events to Polyline: closestLayerPoint, 
+[] add methods/events to MapOptions: doubleClickZoom, CRS, Animation Options,  Panning Inertia Options, Keyboard Navigation Options, Mouse wheel options, Touch interaction options
