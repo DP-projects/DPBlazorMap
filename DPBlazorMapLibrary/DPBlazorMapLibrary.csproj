@@ -27,8 +27,6 @@
 
   <ItemGroup>
     <Folder Include="Models\Layers\OtherLayers\GeoJSON\" />
-    <Folder Include="Models\Layers\OtherLayers\FeatureGroup\" />
-    <Folder Include="Models\Layers\OtherLayers\LayerGroup\" />
     <Folder Include="Models\Layers\RasterLayers\TileLayersWms\" />
     <Folder Include="Models\Layers\VectorLayers\SVGs\" />
     <Folder Include="Models\Layers\VectorLayers\SVGOverlays\" />
