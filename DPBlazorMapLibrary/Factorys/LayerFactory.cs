@@ -11,7 +11,8 @@ namespace DPBlazorMapLibrary
                                 IPolygoneFactory,
                                 IRectangleFactory,
                                 ICircleFactory,
-                                ICircleMarkerFactory
+                                ICircleMarkerFactory,
+                                IGeoJSONFactory
     {
         private const string _createMarkerJsFunction = "L.marker";
         private const string _crateTileLayerJsFunction = "L.tileLayer";
@@ -22,7 +23,8 @@ namespace DPBlazorMapLibrary
         private const string _createRectangleJsFunction = "L.rectangle";
         private const string _createCircleJsFunction = "L.circle";
         private const string _createCircleMarkerJsFunction = "L.circleMarker";
-        
+        private const string _createGeoJSONLayerJsFunction = "L.geoJSON";
+
 
         private readonly IJSRuntime _jsRuntime;
         private readonly IEventedJsInterop _eventedJsInterop;
@@ -183,6 +185,21 @@ namespace DPBlazorMapLibrary
 
         #endregion
 
-        
+        #region GeoJSON layer
+
+        public async Task<GeoJSONLayer> CreateGeoJSONLayer(object geojson, GeoJSONOptions? options)
+        {
+            IJSObjectReference jsReference = await _jsRuntime.InvokeAsync<IJSObjectReference>(_createGeoJSONLayerJsFunction, geojson, options);
+            return new GeoJSONLayer(jsReference);
+        }
+
+        public async Task<GeoJSONLayer> CreateGeoJSONLayerAndAddToMap(object geojson, Map map, GeoJSONOptions? options)
+        {
+            var geoJson = await CreateGeoJSONLayer(geojson, options);
+            await geoJson.AddTo(map);
+            return geoJson;
+        }
+
+        #endregion
     }
 }
