@@ -10,7 +10,7 @@ DP Blazor Map is a library for Blazor, which is a wrapper on top of the Leaflet 
 
 The project is being created and developed in order to become the basis for creating a geoportal on Blazer.
 
-### Template
+### Template Example
 
 https://github.com/DP-projects/DPBlazorMapExample
 
@@ -162,21 +162,21 @@ private Map _map;
             imageOverlayOptions);
 
         await _map.FlyToBounds(imageBounds);
+
+        //Create geoJSON layer
+        var path = System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), "wwwroot", "omsk_vodoem.geojson");
+        var json = await File.ReadAllTextAsync(path);
+        var geoJsonObject = GeoJSON.DeserealizeFromString(json);
+        var geoJSONLayer = await LayerFactory.CreateGeoJSONLayerAndAddToMap(geoJsonObject, _map, null);
     }
 ```
 
 ## TODO
 
-- [ ] Feature Group
-- [x] Image overlay
-- [x] Video overlay
-- [x] Tile layer
-- [ ] Layer group
-- [ ] Geo json layer
-- [ ] geo json models
+[] Add events to layers
 
-- [ ] Add methods/events to Layer : RemoveFrom, onAdd, onRemove, getEvents, getAttribution, <Popup options> options, <Tooltip options> options, getPopup, getTooltip, 
-- [ ] add methods/events to ImageOverlay : event load, event error, getBounds, getElement, 
-- [ ] add methods/events to VideoOverlay:  event load, event error, getElement, 
-- [ ] add methods/events to Polyline: closestLayerPoint, 
-- [ ] add methods/events to MapOptions: doubleClickZoom, CRS, Animation Options,  Panning Inertia Options, Keyboard Navigation Options, Mouse wheel options, Touch interaction options
+[] Add methods/events to Layer : RemoveFrom, onAdd, onRemove, getEvents, getAttribution, <Popup options> options, <Tooltip options> options, getPopup, getTooltip, 
+[] add methods/events to ImageOverlay : event load, event error, getBounds, getElement, 
+[] add methods/events to VideoOverlay:  event load, event error, getElement, 
+[] add methods/events to Polyline: closestLayerPoint, 
+[] add methods/events to MapOptions: doubleClickZoom, CRS, Animation Options,  Panning Inertia Options, Keyboard Navigation Options, Mouse wheel options, Touch interaction options
