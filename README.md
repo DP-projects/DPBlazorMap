@@ -169,10 +169,10 @@ private Map _map;
 
 ## TODO
 
-[ ] Add events to layers
+- [ ] Add events to layers
 
-[ ] Add methods/events to Layer : RemoveFrom, onAdd, onRemove, getEvents, getAttribution, <Popup options> options, <Tooltip options> options, getPopup, getTooltip, 
-[ ] add methods/events to ImageOverlay : event load, event error, getBounds, getElement, 
-[ ] add methods/events to VideoOverlay:  event load, event error, getElement, 
-[ ] add methods/events to Polyline: closestLayerPoint, 
-[ ] add methods/events to MapOptions: doubleClickZoom, CRS, Animation Options,  Panning Inertia Options, Keyboard Navigation Options, Mouse wheel options, Touch interaction options
+- [ ] Add methods/events to Layer : RemoveFrom, onAdd, onRemove, getEvents, getAttribution, <Popup options> options, <Tooltip options> options, getPopup, getTooltip, 
+- [ ] add methods/events to ImageOverlay : event load, event error, getBounds, getElement, 
+- [ ] add methods/events to VideoOverlay:  event load, event error, getElement, 
+- [ ] add methods/events to Polyline: closestLayerPoint, 
+- [ ] add methods/events to MapOptions: doubleClickZoom, CRS, Animation Options,  Panning Inertia Options, Keyboard Navigation Options, Mouse wheel options, Touch interaction options
