@@ -64,7 +64,34 @@ private MapOptions _mapOptions;
 private Map _map;
 ```
 
-4. Create objects, their properties, etc...
+4. Set the minimum map options required to render the component without errors
+
+```c#
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        _mapOptions = new MapOptions()
+            {
+                Zoom = 13,
+            };
+    }
+```
+
+5. Set the minimum tile layer to have a map rendered
+
+```c#
+    private async Task AfterMapRender()
+    {
+        //Create Tile Layer
+        var tileLayerOptions = new TileLayerOptions()
+            {
+                Attribution = "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors"
+            };
+
+        var mainTileLayer = await LayerFactory.CreateTileLayerAndAddToMap("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", _map, tileLayerOptions);
+```
+
+6. Add any additional items; markers, geometry, properties, events, etc...
 
 ```c#
     private async Task AfterMapRender()
