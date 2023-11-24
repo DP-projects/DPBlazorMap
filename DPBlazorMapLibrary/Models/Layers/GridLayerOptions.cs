@@ -34,7 +34,7 @@ namespace DPBlazorMapLibrary
         /// <summary>
         /// If set, tiles will only be loaded inside the set.
         /// </summary>
-        public Tuple<LatLng, LatLng> Bounds { get; set; }
+        public (LatLng TopLeft, LatLng BottomRight)? Bounds { get; set; }
 
     }
 }
